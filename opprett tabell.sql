@@ -1,0 +1,10 @@
+CREATE DATABASE skjema_db;
+USE skjema_db;
+
+CREATE TABLE kontakter (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    navn VARCHAR(100) NOT NULL,
+    epost VARCHAR(100) NOT NULL,
+    melding TEXT NOT NULL,
+    dato TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
