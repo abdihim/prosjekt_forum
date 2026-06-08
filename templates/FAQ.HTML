@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav>
+    <span class="logo">Forum</span>
+    <div>
+        <a href="/users">Brukere</a>
+        <a href="/faq">FAQ</a>
+        <a href="/meld_feil">Meld feil</a>
+        <a href="/login">Logg inn</a>
+    </div>
+</nav>
+<main>
+    <h1>FAQ og lovverk</h1>
+    <p>Vanlige spørsmål og regler for bruk av forumet.</p>
+
+    <div class="card">
+        <h3>Hvilke regler gjelder på forumet?</h3>
+        <p>Alle brukere plikter å følge norsk lov, inkludert personopplysningsloven og straffeloven. Det er ikke tillatt å dele ulovlig innhold, trakassere andre eller spre falsk informasjon.</p>
+    </div>
+
+    <div class="card">
+        <h3>Hva sier personopplysningsloven?</h3>
+        <p>Personopplysningsloven (GDPR) slår fast at persondata kun kan samles inn med samtykke, brukes til det de er samlet inn for, og slettes når de ikke lenger er nødvendige.</p>
+    </div>
+
+    <div class="card">
+        <h3>Hvem har ansvar for innholdet?</h3>
+        <p>Den som publiserer innhold er selv ansvarlig. Forumet følger åndsverkloven — det er ikke tillatt å dele opphavsrettsbeskyttet materiale uten tillatelse.</p>
+    </div>
+
+    <div class="card">
+        <h3>Hva skjer ved brudd på reglene?</h3>
+        <p>Ved brudd på reglene kan brukeren bli utestengt. Grove brudd meldes til relevante myndigheter i tråd med norsk lovgivning.</p>
+    </div>
+
+    <div class="card">
+        <h3>Hvordan melder jeg fra om regelbrudd?</h3>
+        <p>Bruk <a href="/meld_feil">meld feil-siden</a> for å rapportere upassende innhold eller regelbrudd.</p>
+    </div>
+</main>
+<footer>Flask + MariaDB // Raspberry Pi</footer>
+</body>
+</html>

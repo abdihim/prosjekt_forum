@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logg inn</title>
+    <title>Meld feil</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -16,15 +16,17 @@
     </div>
 </nav>
 <main>
-    <h1>Logg inn</h1>
-    <p>Skriv inn brukernavn og passord.</p>
+    <h1>Meld feil</h1>
+    <p>Fant du noe som ikke fungerer? Si ifra!</p>
     <div class="card">
         <form method="POST">
-            <label>Brukernavn</label>
-            <input type="text" name="username" placeholder="ditt_brukernavn" required>
-            <label>Passord</label>
-            <input type="password" name="password" placeholder="••••••••" required>
-            <button type="submit" class="btn">Logg inn</button>
+            <label>Navn</label>
+            <input type="text" name="navn" placeholder="Ditt navn" required>
+            <label>E-post</label>
+            <input type="email" name="epost" placeholder="din@epost.no" required>
+            <label>Beskrivelse</label>
+            <textarea name="melding" rows="4" placeholder="Hva skjedde?" required></textarea>
+            <button type="submit" class="btn">Send inn</button>
         </form>
     </div>
 </main>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brukere</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav>
+    <span class="logo">Forum</span>
+    <div>
+        <a href="/users">Brukere</a>
+        <a href="/meld_feil">Meld feil</a>
+        <a href="/login">Logg inn</a>
+    </div>
+</nav>
+<main>
+    <h1>Alle brukere</h1>
+    <div class="card">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Brukernavn</th>
+                    <th>Passord</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in data %}
+                <tr>
+                    <td>{{ user[0] }}</td>
+                    <td>{{ user[1] }}</td>
+                    <td>{{ user[2] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</main>
+<footer>Flask + MariaDB // Raspberry Pi</footer>
+</body>
+</html>

@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="no">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-
 <body>
-
-<h1>Velkommen til forumet mitt</h1>
-<p>Dette er starten på prosjektet mitt.</p>
-
-<a href="/login">Gå til login</a>
-
+<nav>
+    <span class="logo">Forum</span>
+    <div>
+        <a href="/users">Brukere</a>
+        <a href="/meld_feil">Meld feil</a>
+        <a href="/login">Logg inn</a>
+    </div>
+</nav>
+<main>
+    <h1>Velkommen til forumet</h1>
+    <p>Et enkelt forum bygget med Flask og MariaDB.</p>
+    <a href="/login" class="btn">Logg inn</a>
+    <a href="/registrer" class="btn">Registrer</a>
+</main>
+<footer>Flask + MariaDB // Raspberry Pi</footer>
 </body>
-
 </html>
